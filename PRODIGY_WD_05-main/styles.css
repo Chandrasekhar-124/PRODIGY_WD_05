@@ -1,0 +1,107 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e0f7fa90;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background 0.5s ease;
+}
+
+.default {
+    background:url('images/weather.gif')no-repeat center center/cover;
+}
+
+.sunny {
+    background:url('images/sunnyday.gif')no-repeat center center/cover;
+}
+
+.cloudy {
+    background:url('images/cloudy.gif')no-repeat center center/cover;
+}
+
+.rainy {
+    background:url('images/rainyday.webp')no-repeat center center/cover;
+
+    
+}
+
+.snowy {
+    background: url('images/snowy.gif')no-repeat center center/cover;
+}
+
+.header {
+    background: #3ccde3c6;
+    color: rgb(25, 25, 25);
+    padding: 15px;
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-location {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #006164aa;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.btn-fetch {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background: #cc16eca9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-fetch:hover {
+    background: #73e522ac;
+}
+
+.weather-section {
+    background: rgba(176, 225, 217, 0.649);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.weather-section .wi {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.weather-section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.weather-section p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
